@@ -1,0 +1,90 @@
+//POST /api/points/
+{
+    "name": "Point 1",
+    "location": {
+        "type": "Point",
+        "coordinates": [-0.09, 51.505]
+    }
+}
+
+
+//POST /api/polygons/
+{
+    "name": "Polygon 1",
+    "area": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [-0.1, 51.5],
+                [-0.1, 51.6],
+                [-0.08, 51.6],
+                [-0.08, 51.5],
+                [-0.1, 51.5]
+            ]
+        ]
+    }
+}
+
+
+//GET /api/points/
+// NO payload
+
+
+//GET /api/polygons/
+// NO payload
+
+
+// GET /api/points/1/
+// NO payload
+
+
+// PUT /api/points/1/
+{
+    "name": "Updated Point 1",
+    "location": {
+        "type": "Point",
+        "coordinates": [75.78543901946227, 17.912671869722075]
+    }
+}
+
+
+
+// PUT /api/polygons/1/
+{
+    "name": "Updated Polygon 1",
+    "area": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                76.3928477850369,
+                11.620174470250674
+            ],
+            [
+                80.363832964832,
+                13.378081516373584
+            ],
+            [
+                79.66173619768631,
+                10.266382244360443
+            ],
+            [
+                77.39905134150314,
+                7.943969478884696
+            ],
+            [
+                76.28616572528608,
+                11.826959063043574
+            ]
+        ]
+    }
+}
+
+
+
+// DELETE /api/points/1
+// NO payload
+
+
+
+// DELETE /api/polygons/1/
+// NO payload

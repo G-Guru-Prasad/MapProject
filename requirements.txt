@@ -1,0 +1,9 @@
+django
+requests
+djangorestframework
+
+# create a virtual environment
+#python -m venv genv
+
+# command to install required packages
+# pip install -r requirements.txt

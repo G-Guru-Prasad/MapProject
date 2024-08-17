@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "e03a8cca-6e41-4f0a-9c75-180deb29fbac",
+		"name": "Map Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37387616"
+	},
+	"item": [
+		{
+			"name": "Create Point",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Point 1\",\r\n    \"location\": {\r\n        \"type\": \"Point\",\r\n        \"coordinates\": [75.78543901946227,17.912671869722075]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/points/"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Polygon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Polygon 1\",\r\n    \"area\": {\r\n        \"type\": \"Polygon\",\r\n        \"coordinates\": [\r\n                        [76.3928477850369, 11.620174470250674],\r\n                        [80.363832964832, 13.378081516373584],\r\n                        [79.66173619768631, 10.266382244360443],\r\n                        [77.39905134150314, 7.943969478884696],\r\n                        [76.28616572528608, 11.826959063043574]\r\n                        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/polygons/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Points",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/points/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one Point",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/points/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Polygons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/polygons/"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one Polygon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/polygons/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update point",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Updated Point 1\",\r\n    \"location\": {\r\n        \"type\": \"Point\",\r\n        \"coordinates\": [75.78543901946227,17.912671869722075]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/points/2/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update polygon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Updated Polygon 1\",\r\n    \"area\": {\r\n        \"type\": \"Polygon\",\r\n        \"coordinates\": [\r\n            [\r\n                76.3928477850369,\r\n                11.620174470250674\r\n            ],\r\n            [\r\n                80.363832964832,\r\n                13.378081516373584\r\n            ],\r\n            [\r\n                79.66173619768631,\r\n                10.266382244360443\r\n            ],\r\n            [\r\n                77.39905134150314,\r\n                7.943969478884696\r\n            ],\r\n            [\r\n                76.28616572528608,\r\n                11.826959063043574\r\n            ]\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/polygons/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one point",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/points/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete one polygon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/polygons/1/"
+			},
+			"response": []
+		}
+	]
+}
