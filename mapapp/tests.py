@@ -6,7 +6,7 @@ from .models import PointData, PolygonData
 class SpatialDataAPITestCase(APITestCase):
 
     def setUp(self):
-        # Create initial point and polygon data for testing using plain JSON
+        # Creating initial point and polygon data for testing using plain JSON
         self.point1 = PointData.objects.create(
             name="Point 1", 
             location={"type": "Point", "coordinates": [-0.09, 51.505]}
