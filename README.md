@@ -121,12 +121,9 @@ $.ajax({
     url: 'getSpatialData',
     method: 'GET',
     success: function(data) {
-        data.forEach(function(point) {
-            var marker = new ol.Feature({
-                geometry: new ol.geom.Point(ol.proj.fromLonLat(point.location.coordinates))
-            });
-            // Add marker to the map
-        });
+       var data = response["data"];
+        addPoints(data["points_data"]);
+        addPolygon(data["polygon_data"]);
     }
 });
 ```
